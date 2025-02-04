@@ -1,1 +1,22 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+let listaAmigos = [];
+
+function agregarAmigo() {
+    let nombreAmigo = document.getElementById('amigo').value;
+    if (nombreAmigo.trim().length === 0) {
+        asignarTextoElemento('ul', 'El campo está vacío, digite nuevamente.');
+    } else {
+        listaAmigos.push(nombreAmigo);
+        asignarTextoElemento('ul', `Nombre: ${nombreAmigo} agregado.`);
+    }
+    return;
+}
+
+function sortearAmigo() {
+
+}
+
+function asignarTextoElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(elemento);
+    elementoHTML.innerHTML = texto;
+    return;
+}
