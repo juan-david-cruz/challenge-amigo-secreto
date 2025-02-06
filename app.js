@@ -1,5 +1,11 @@
 let amigos = [];
+let listaAmigos = document.getElementById('listaAmigos');
+let amigoSorteado = document.getElementById('resultado');
 
+/*
+Funcion para guardar el nombre ingresado al campo de entrada.
+Esta funcion se ejecuta al oprimir el boton AÑADIR.
+*/
 function agregarAmigo() {
     let nombreAmigo = document.getElementById('amigo').value;
     if (nombreAmigo.trim().length === 0) {
@@ -12,20 +18,22 @@ function agregarAmigo() {
     return;
 }
 
+//Funcion para mostrar y añadir en lista el nombre ingresado
 function actualizarListaAmigos() {
-    let listaHTML = document.getElementById('listaAmigos');
-    listaHTML.innerHTML = '';
-    for (var i = 0; i <= amigos.length - 1; i++) {
+    listaAmigos.innerHTML = '';
+    for (var i = 1; i <= amigos.length; i++) {
         let elementoDeLista = document.createElement('li');
-        elementoDeLista.textContent = amigos[i];
-        listaHTML.appendChild(elementoDeLista);
+        elementoDeLista.textContent = `${i}. ${amigos[i - 1]}.`;
+        listaAmigos.appendChild(elementoDeLista);
     }
 }
 
-function asignarTextoElemento(elemento, texto) {
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
-    return;
+//Funcion para sortear un amigo cuando se oprime el boton SORTEAR AMIGO
+function sortearAmigo() {
+    if (amigos.length >= 1) {
+        let numero = Math.floor(Math.random() * amigos.length);
+        amigoSorteado.innerHTML = `El amigo sorteado es: ${amigos[numero]}.`;
+    }
 }
 
 function limpiarCaja() {
