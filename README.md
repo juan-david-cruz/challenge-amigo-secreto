@@ -25,7 +25,8 @@ En esta [página](https://juan-david-cruz.github.io/challenge-amigo-secreto/) pu
 ## 🖥️ Cómo usar
 Para agregar los nombres a la lista, lo primero es ingresarlos en el campo de texto, y seguidamente dar click en el botón Añadir, tal como muestran la siguiente secuencia.
 <p align="center"><img src="https://github.com/user-attachments/assets/5396943a-3315-4dc5-ac70-a150a65a2a13"></p>
-Una vez ingresados todos los nombres, click en el botón **``Sortear amigo``** para la selección aleatoria de una de los nombres ingresados.
+
+Una vez ingresados todos los nombres, click en el botón **"Sortear amigo"** para la selección aleatoria de una de los nombres ingresados.
 
 ## ✔️ Tecnologías utilizadas
 - Javascript
@@ -33,5 +34,6 @@ Una vez ingresados todos los nombres, click en el botón **``Sortear amigo``** p
 - CSS
 - VSCode
 
-## 🎖️ Autores
-``Juan David Cruz``
+## 🎖️ Autor
+[<img src="https://avatars.githubusercontent.com/u/182031998?v=4" width=115><br><sub>Juan David Cruz</sub>](https://github.com/juan-david-cruz) |
+| :---: |
